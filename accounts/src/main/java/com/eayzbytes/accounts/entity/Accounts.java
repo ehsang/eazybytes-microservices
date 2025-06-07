@@ -19,12 +19,12 @@ import org.hibernate.annotations.GenericGenerator;
 @Entity
 public class Accounts extends BaseEntity {
 
+    @Column(name = "customer_id")
+    private Long customerId;
+
     @Id
     @Column(name = "account_number")
     private Long accountNumber;
-
-    @Column(name = "customer_id")
-    private Long customerId;
 
     @Column(name = "account_type")
     private String accountType;
